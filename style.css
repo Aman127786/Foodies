@@ -1,0 +1,386 @@
+
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+                :root{
+                    --primary-color:#fc7f09;
+                    --color-light:#fffcfa;
+                    --color-dark:#db6e09;
+                    --text-dark:#18181b;
+                    --white:#FFFFFF;
+                    --text-light:#6b7280;
+
+                }
+                *{
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding:0;
+                }
+                body{
+                    font-family: "poppins", sans-serif;
+                }
+                .head-container{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background-color: var(--color-light);
+                    margin: 0;
+                    padding: 0px 30px 0px 30px;
+                    position: fixed;
+                    width: 100%;
+                
+                
+                }
+                .logo{
+                    color: var(--primary-color);
+                    font-size: 30px;
+                    font-weight: bolder;
+                    margin-right: auto;
+                    box-shadow: #6b7280;
+                    
+
+                }
+                .logo span{
+                    font-weight: bolder;
+                    color: var(--text-dark);
+                    font-size: 30px;
+                }
+                .nav-links li{
+                    display: inline-block;
+                    margin: 10px;
+                
+                }
+                .nav-links li a {
+                text-decoration: none;
+                color: black;
+                transition: color 0.3s ease, background-color 0.3s ease;
+                display: inline-block; /* Prevent layout shift */
+                padding: 5px 10px;      /* Add consistent padding */
+                line-height: 1.5;       /* Stabilize vertical alignment */
+                font-weight: 700;
+                }
+
+
+                .nav-links li a:hover {
+                color: var(--text-dark);
+                background-color:#fc7f09; /* or any color you like */
+                padding: 5px 10px;
+                border-radius: 4px;
+                }
+                
+                .search{
+                    margin: auto;
+                    padding: 10px;
+                    display: flex;
+                
+                
+                }
+                .search input{
+                    width: 220px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color:var(--color-light);
+                    transition: color 0.3s ease;
+                    font-style: italic;
+
+                }
+                .search input:hover::placeholder {
+                color: #d82323; /* Change to any color you like */
+                font-style:normal;
+
+                }
+
+
+                
+                button {
+                height: 100%;
+                width: 100%;
+                background-color:transparent;
+                border: transparent;
+                font-size: 1.7rem;
+                margin-left: 5px;
+                margin-top: 2px;
+                
+                }
+                button :hover{
+                cursor: pointer;
+                }
+                .cart{
+                    width: 46px;
+                    height: 34px;
+                    background-color: #ffe6cf;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                }
+            .main-content-container{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                margin-bottom: 50px;
+                background-color: #fdd9b8;
+                
+            
+            }
+            .content{
+                display: inline-block;
+            }
+            .main-img img{
+                width: 400px;
+                height: auto;
+                border-radius: 20px;
+            }
+            .main-img{
+                margin-top: 65px;
+                padding: 10px;
+            }
+            h1{
+                text-align: center;
+                width: 100%;
+            }
+            h1 span{
+                color: var(--primary-color);
+            }
+            p{
+                text-align: center;
+            }
+            .service-heading{
+                margin: 0;
+                padding: 20px;
+                font-size: large;
+                font-weight: 900;
+            }
+            .card-container{
+                display: flex;
+                justify-content:space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .card1,.card2,.card3{
+                width: 320px;
+                height: 450px;
+                background-color:#ddf587 ;
+                margin: 10px;
+                border-radius: 20px;
+                display: grid;
+                border: 2px solid rgb(250, 163, 50);
+                
+            }
+
+            .circle1 img {
+            width: 70%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+            background-color: transparent;
+            margin-left: 2.6rem;
+            margin-top: 1rem;
+            }
+            .card-content h3{
+                text-align: center;
+            
+            
+            }
+            .card-content li{
+                margin-left: 2rem;
+                font-size: 16px;
+            }
+            .circle2 img{
+            width: 70%;
+            height: 175px;
+            display: block;
+            border-radius: 20px;
+            background-color: transparent;
+            margin-left: 3rem;
+            margin-top: 1rem;
+            object-fit: cover;
+
+            }
+            .circle3 img{
+            width: 70%;
+            height: 175px;
+            display: block;
+            border-radius: 20px;
+            background-color: transparent;
+            margin-left: 3rem;
+            margin-top: 1rem;
+            object-fit: cover;
+            }
+            .BBQ-btn{
+                background-color: rgb(255, 168, 6);
+                width: 120px;
+                height: 60px;
+                border-radius: 15px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 6.4rem;
+                margin-top: 1rem;
+                border: 3px solid black;
+
+            }
+            .chef-content-container{
+            display: flex;
+                justify-content:center;
+                align-items: center;
+                margin-bottom: 5px;
+                background-color: rgb(255, 229, 215);
+                padding: 3rem;
+            }
+            .chef-img img{
+                width: 400px;
+                height: auto;
+                border-radius: 20px;
+            }
+            .chef-img{
+            
+                padding: 10px;
+            }
+
+            
+            section .chef-heading{
+                background-color: #f18a45;
+                margin-top: 3rem;
+            }
+            /* hover effects */
+            /* car-card-container */
+
+
+            .card-container :hover{
+                cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            }
+            /* For main content */
+            .main-img img:hover {
+                cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            }
+            .head-part  :hover{
+                cursor:grab;
+                
+
+            }
+            /* chef part */
+            .chef-img img {
+            transition: transform 0.3s ease;
+            }
+
+            .chef-img img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            }
+            .feedback-container{
+                background: #ffffff;
+                padding: 20px;
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10 rgba(0,0,0,0.1);
+                text-align: center;
+            
+            }
+            h1{
+                margin-bottom: 10px;
+                text-align: center;
+
+            }
+            .star-rating{
+                display: flex;
+                justify-content: center;
+                flex-direction: row-reverse;
+                font-size: 25px;
+
+            }
+            .star-rating input {
+    display: none;
+    }
+
+    .star-rating label {
+    cursor: pointer;
+    color: #ccc;
+    font-size: 25px;
+    transition: color 0.3s;
+    }
+
+    .star-rating input:checked ~ label {
+    color: gold;
+    }
+
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+    color: gold;
+    }
+
+        textarea{
+            width: 500px;
+            height: 80px;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        
+        }
+        .fbtn {
+    
+        width: 150px;
+        height: 50px;
+        margin: 10px auto;
+        display: block;
+        background: rgb(35, 82, 235);
+        border-radius: 5px;
+        font-weight: 800;
+        }
+
+    .fbtn:hover {
+    background-color: rgb(238, 255, 0); /* Slightly darker blue */
+    cursor: pointer;
+    transform: scale(1.05); /* Optional: subtle zoom effect */
+    transition: all 0.3s ease;
+    }
+
+            .back-home{
+                background-color: #41484f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                height: 60px;
+                width: 100%;
+
+            }
+            .back-home span{
+                margin-left: 10px;
+            }
+            .footer-container{
+                background-color:#232F3E;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: white;
+                height: 140px;
+            
+            
+            }
+            .footer-content ul,a{
+                list-style: none;
+                text-decoration: none;
+                
+            }
+            .footer-social ul,a{
+                list-style: none;
+                text-decoration: none;
+            }
+            .footer-help ul,a{
+                list-style: none;
+                text-decoration: none;
+            }
+            
+            .footer-container a {
+                color:whitesmoke;
+            }
+            .footer-heading{
+                margin-top: 0;
+            }
